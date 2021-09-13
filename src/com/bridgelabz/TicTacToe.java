@@ -12,7 +12,9 @@ public class TicTacToe {
         Scanner scan =new Scanner(System.in); //Create scanner object
         int choice = scan.nextInt();
 
+
         TicTacToe.allowPlayer(choice);
+        TicTacToe.showBoard();
         scan.close();
     }
 
@@ -45,5 +47,11 @@ public class TicTacToe {
                 return;
             }
         }
+    }
+    public  static void showBoard() {
+        System.out.println("Board Display\n");
+        System.out.println(" | "+board[1]+" | "+board[2]+" | "+board[3]+" |\n");
+        System.out.println(" | "+board[4]+" | "+board[5]+" | "+board[6]+" |\n");
+        System.out.println(" | "+board[7]+" | "+board[8]+" | "+board[9]+" |\n");
     }
 }
